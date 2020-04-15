@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css">
+ </head>
+  <body>
+    <div id="container">
+      <div class="text">
+        <h1 id="game-title">Memory Game</h1>
+        <h3 id="score">Score: <span id="result">0</span>/9</h3>
+        <h3 id="words">Find a match</h3>
+  </div>
+    <div class="memory-game"> 
+      <div class="memory-card" data-name="cupcake">
+        <img class="front-face" src="images/cupcake.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="cupcake">
+        <img class="front-face" src="images/cupcake.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="eyelash">
+        <img class="front-face" src="images/eyelash.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="eyelash">
+        <img class="front-face" src="images/eyelash.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="mustache">
+        <img class="front-face" src="images/mustache.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="mustache">
+        <img class="front-face" src="images/mustache.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="heart">
+        <img class="front-face" src="images/heart.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="heart">
+        <img class="front-face" src="images/heart.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="jellybeans">
+        <img class="front-face" src="images/jellybeans.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="jellybeans">
+        <img class="front-face" src="images/jellybeans.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="sunflower">
+        <img class="front-face" src="images/sunflower.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="sunflower">
+        <img class="front-face" src="images/sunflower.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="pirate">
+        <img class="front-face" src="images/pirate.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="pirate">
+        <img class="front-face" src="images/pirate.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="tulip">
+        <img class="front-face" src="images/tulip.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="tulip">
+        <img class="front-face" src="images/tulip.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="car">
+        <img class="front-face" src="images/car.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      <div class="memory-card" data-name="car">
+        <img class="front-face" src="images/car.png" />
+        <img class="back-face" src="images/fireworks.png" />
+      </div>
+      
+    </div>
+    <div id="reset">
+      <!--Since this is pure javascript and no initial state like in react, I'm using refresh  window to restart-->
+      <button id="reset-button" onclick="window.location.reload()">Reset</button> 
+    </div>
+  </div>
+    <script src="index.js"></script>
+    
+  </body>
+
+</html>
