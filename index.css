@@ -80,4 +80,33 @@ button {
   background-color: pink;
   font-family: Verdana, Tahoma, sans-serif;
 }
-
+@media(max-width: 500px){
+  .memory-game{
+    width: 300px; /*125 * 6*/
+    height: 840px; /*175 * 3*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; /*to center the game from the body horizontally and vertically*/
+    perspective: 1000px; /*for 3D effect*/
+  }
+  
+  .memory-card{
+    width: calc(33.33% - 10px); /*to exclude 5px margin*/
+    height: calc(16.5% - 10px);/*to exclude 5px margin*/
+    margin: 5px;
+    position: relative; /*to make position of front and back card on top of each other. abosolute position relative to this element */
+    transform: scale(1); /*so tranform and transition will work*/
+    transform-style: preserve-3d;/*for 3D effect*/
+    transition: transform .5s;
+  }
+  .front-face, .back-face{
+    border: 2px solid violet;
+    position: absolute; /*to make position of front and back card on top of each other */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: pink;
+    backface-visibility: hidden; /* all HTML has backface which is inverted image so it is need to be hidden */
+  }
+}
